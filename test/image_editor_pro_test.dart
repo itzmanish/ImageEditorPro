@@ -1,6 +1,5 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:image_editor_pro/image_editor_pro.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('image_editor_pro');
@@ -17,7 +16,7 @@ void main() {
     channel.setMockMethodCallHandler(null);
   });
 
-  test('getPlatformVersion', () async {
-    expect(await ImageEditorPro.platformVersion, '42');
-  });
+  // test('getPlatformVersion', () async {
+  //   expect(await ImageEditorPro.platformVersion, '42');
+  // });
 }
